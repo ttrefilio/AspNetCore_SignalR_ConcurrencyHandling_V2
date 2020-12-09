@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using TodoList.Business.Interfaces;
-
-namespace TodoList.Business.Entities
+﻿namespace TodoList.Business.Entities
 {
-    public class TodoItem : ITodoItem
+    public class Item
     {
         public int Id { get; set; }
         public string Title { get; set; }

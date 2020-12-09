@@ -47,7 +47,7 @@ namespace TodoList.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "TodoItems",
+                name: "Items",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
@@ -225,7 +225,7 @@ namespace TodoList.Data.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "TodoItems");
+                name: "Items");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -25,6 +26,9 @@ namespace TodoList.Application
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppDbContext>();
+
+            services.AddAutoMapper(typeof(Startup));
+
             services.AddControllersWithViews();
         }
 

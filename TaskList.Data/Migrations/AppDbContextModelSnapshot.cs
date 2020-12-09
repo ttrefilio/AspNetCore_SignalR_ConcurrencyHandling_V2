@@ -170,7 +170,7 @@ namespace TodoList.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("TodoItems");
+                    b.ToTable("Items");
                 });
 
             modelBuilder.Entity("TodoList.Business.Entities.User", b =>
